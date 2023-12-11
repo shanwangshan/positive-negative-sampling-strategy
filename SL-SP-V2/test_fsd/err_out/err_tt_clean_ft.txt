@@ -1,0 +1,7 @@
+0it [00:00, ?it/s]1it [00:01,  1.05s/it]22it [00:01, 25.90it/s]48it [00:01, 59.79it/s]80it [00:01, 104.38it/s]114it [00:01, 150.72it/s]147it [00:01, 188.82it/s]185it [00:01, 233.06it/s]222it [00:01, 264.93it/s]255it [00:01, 275.64it/s]288it [00:01, 289.85it/s]321it [00:02, 287.67it/s]360it [00:02, 315.42it/s]398it [00:02, 333.13it/s]433it [00:02, 328.98it/s]467it [00:02, 328.87it/s]501it [00:02, 329.73it/s]535it [00:02, 325.85it/s]569it [00:02, 329.17it/s]608it [00:02, 345.25it/s]645it [00:03, 350.02it/s]684it [00:03, 359.78it/s]721it [00:03, 362.54it/s]760it [00:03, 369.93it/s]798it [00:03, 359.37it/s]835it [00:03, 326.11it/s]874it [00:03, 342.36it/s]909it [00:03, 338.58it/s]947it [00:03, 242.54it/s]
+Traceback (most recent call last):
+  File "/usr/local/bin/jobinfo.py", line 14, in <module>
+    gpu_stats = getstats(sys.argv[1])
+  File "/usr/local/bin/jobinfo.py", line 10, in getstats
+    with open(fname) as stats_file:
+IOError: [Errno 2] No such file or directory: '/run/gpustats.json'

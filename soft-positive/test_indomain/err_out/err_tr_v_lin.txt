@@ -1,0 +1,35 @@
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2b8d99320f70>
+Traceback (most recent call last):
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1455, in _shutdown_workers
+    self._worker_result_queue.put((None, None))
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/multiprocessing/queues.py", line 94, in put
+    self._start_thread()
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/multiprocessing/queues.py", line 177, in _start_thread
+    self._thread.start()
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/threading.py", line 935, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't start new thread
+Traceback (most recent call last):
+  File "/lustre/wang9/Audio-video-ACL/random_soumya_norm/test_indomain/train.py", line 179, in <module>
+    training_loss.append(train(epoch)) # Call training
+  File "/lustre/wang9/Audio-video-ACL/random_soumya_norm/test_indomain/train.py", line 119, in train
+    esti_label = model(batch_embed)
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 168, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 178, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 76, in parallel_apply
+    thread.start()
+  File "/home/wang9/anaconda3/envs/torch_1.11/lib/python3.10/threading.py", line 935, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't start new thread
+Traceback (most recent call last):
+  File "/usr/local/bin/jobinfo.py", line 14, in <module>
+    gpu_stats = getstats(sys.argv[1])
+  File "/usr/local/bin/jobinfo.py", line 10, in getstats
+    with open(fname) as stats_file:
+IOError: [Errno 2] No such file or directory: '/run/gpustats.json'

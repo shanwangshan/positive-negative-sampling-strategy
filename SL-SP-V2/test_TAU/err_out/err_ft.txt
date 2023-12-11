@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 2995857 ON g4301 CANCELLED AT 2023-11-23T22:46:17 ***

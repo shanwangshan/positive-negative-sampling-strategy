@@ -1,0 +1,6 @@
+use random sampling as the baseline in each mini-batch.
+
+indomain sound event Classification acc:
+
+Tau linear:
+tau finetune:

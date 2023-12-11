@@ -1,0 +1,25 @@
+debug: false
+num_workers: 4
+seed: 0
+n_epochs: 100
+batch_size: 64
+#ckp_path: '../checkpoint/'
+
+vgg_path: '/vgg-sound/'
+filepath: '../selected_files.csv'
+unwanted_files_path: '../../unwanted.csv'
+# video_clip_duration: 0.5
+# video_fps: 16.
+audio_fps: 16000
+audio_dur: 1
+spectrogram_fps: 100.
+n_fft: 512
+n_mels: 64
+model_type: 'audio'
+
+num_classes: 309
+feat_name: "pool"
+pooling_op: null
+feat_dim: 512
+use_dropout: true
+dropout: 0.5

@@ -1,0 +1,2 @@
+linear prob: 62.3%
+finetune:63%

@@ -1,0 +1,17 @@
+debug: false
+num_workers: 8
+seed: 0
+n_epochs: 100
+batch_size: 64
+ckp_path: '../checkpoint/'
+data_path: '../../../amc/FSDnoisy18k/features/'
+
+
+num_classes: 20
+feat_name: "pool"
+pooling_op: null
+feat_dim: 512
+use_dropout: true
+dropout: 0.5
+
+#manually_verified, noisy_small

@@ -1,0 +1,8 @@
+slurmstepd: error: *** JOB 25728813 ON nag11 CANCELLED AT 2023-11-10T23:19:32 ***
+Traceback (most recent call last):
+  File "/usr/local/bin/jobinfo.py", line 14, in <module>
+    gpu_stats = getstats(sys.argv[1])
+  File "/usr/local/bin/jobinfo.py", line 10, in getstats
+    with open(fname) as stats_file:
+IOError: [Errno 2] No such file or directory: '/run/gpustats.json'
+Job has already finished for job 25728813

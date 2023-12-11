@@ -1,0 +1,43 @@
+/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+/home/wang9/anaconda3/envs/torch_1.11/bin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+{'debug': False, 'num_workers': 8, 'seed': 0, 'n_epochs': 100, 'batch_size': 81, 'ckp_path': '../checkpoint/', 'data_path': '../../../TAU-urban-audio-visual-scenes-2021-development/', 'video_clip_duration': 10, 'video_fps': 16.0, 'audio_fps': 16000, 'audio_dur': 10, 'spectrogram_fps': 100.0, 'n_fft': 512, 'n_mels': 64, 'model_type': 'audio', 'num_classes': 10, 'feat_name': 'pool', 'pooling_op': None, 'feat_dim': 512, 'use_dropout': False, 'dropout': 0.5}
+ClassificationWrapper(
+  (feature_extractor): Conv2D(
+    (conv1): Sequential(
+      (0): Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (block1): Basic2DBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (block2): Basic2DBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (block3): Basic2DBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (block4): Basic2DBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (pool): AdaptiveMaxPool2d(output_size=(1, 1))
+  )
+  (classifier): Linear(in_features=512, out_features=10, bias=True)
+)
+model type is audio linear prob is  False test accuracy is 0.624

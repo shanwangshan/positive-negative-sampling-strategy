@@ -1,0 +1,13 @@
+/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+/home/wang9/anaconda3/envs/torch_1.11/bin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+{'debug': False, 'num_workers': 16, 'seed': 0, 'n_epochs': 100, 'batch_size': 64, 'ckp_path': '../checkpoint/', 'vgg_path': '/vgg-sound/', 'filepath': '../selected_files.csv', 'unwanted_files_path': '../../unwanted.csv', 'video_clip_duration': 0.5, 'video_fps': 16.0, 'audio_fps': 16000, 'audio_dur': 1, 'spectrogram_fps': 100.0, 'n_fft': 512, 'n_mels': 64, 'num_classes': 309, 'feat_name': 'pool', 'pooling_op': None, 'feat_dim': 512, 'use_dropout': True, 'dropout': 0.5}
+all the training files is 38007
+training has  30406
+all the training files is 38007
+validation has  7601
+/lustre/wang9/Audio-video-ACL/random_soumya_norm/test_indomain/../checkpoint/checkpoint.pt
+model type is video linear prob is True
+Let's use 2 GPUs!
+Directory  ./video_model_lin/  Created 
+-----------start training
+this is epoch 1
