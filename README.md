@@ -69,7 +69,6 @@ The checkpoint is saved at checkpoint folder, one can download the pre-trained w
 | sampling method     | in-domain         | out-of-domain on TAU | out-of-domain on FSD |
 |---------------------|-------------------|----------------------|----------------------|
 |                     | linear / finetune | linear / finetune    | linear / finetune    |
-|---------------------|-------------------|----------------------|----------------------|
 | Random              | 13.8% / 31.3%     | 59.6% / 61.7%        | 44.9% / 59.8%        |
 | Easy-negative       | 13.1% / 30.9%     | 57.7% / 62.4%        | 48.2% / 61.1%        |
 | Hard-negative       | 6.9% / 30.8%      | 58.7% / 62.3%        | 36.6% / 56.8%        |
