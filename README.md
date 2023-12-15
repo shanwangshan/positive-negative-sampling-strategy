@@ -64,3 +64,17 @@ The checkpoint is saved at checkpoint folder, one can download the pre-trained w
 	The test outputs are saved in folder err_out.
 
 - Other two out-of-domain downstream tasks are seen from folder test_TAU, test_fsd.
+
+#### Results of all sampling methods
+| sampling method     | in-domain         | out-of-domain on TAU | out-of-domain on FSD |
+|---------------------|-------------------|----------------------|----------------------|
+|                     | linear / finetune | linear / finetune    | linear / finetune    |
+|---------------------|-------------------|----------------------|----------------------|
+| Random              | 13.8% / 31.3%     | 59.6% / 61.7%        | 44.9% / 59.8%        |
+| Easy-negative       | 13.1% / 30.9%     | 57.7% / 62.4%        | 48.2% / 61.1%        |
+| Hard-negative       | 6.9% / 30.8%      | 58.7% / 62.3%        | 36.6% / 56.8%        |
+| Soft-positive (50%) | 19.7% / 31.3%     | 59.4% / 62.9%        | 54.4% / 65.8%        |
+| Soft-positive       | 20.5% / 32.3%     | 59.8% / 64.6%        | 52.9% / 68.1%        |
+| SP70                | 14.5% / 31.3%     | 59.1% / 66.9%        | 49.8% / 65.2%        |
+| PL-SP               | 16.2% / 30.4%     | 58.2% / 62.8%        | 48.9% / 66.1%        |
+| Supervised          | 31.7%             | 61.6%                | 55.2%                |
