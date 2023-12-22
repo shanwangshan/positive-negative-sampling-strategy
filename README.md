@@ -75,5 +75,5 @@ The checkpoint is saved at checkpoint folder, one can download the pre-trained w
 | Soft-positive (50%) | 19.7% / 31.3%     | 59.4% / 62.9%        | 54.4% / 65.8%        |
 | Soft-positive       | 20.5% / 32.3%     | 59.8% / 64.6%        | 52.9% / 68.1%        |
 | SP70                | 14.5% / 31.3%     | 59.1% / 66.9%        | 49.8% / 65.2%        |
-| PL-SP               | 16.2% / 30.4%     | 58.2% / 62.8%        | 48.9% / 66.1%        |
+| PL-soft-positive    | 16.2% / 30.4%     | 58.2% / 62.8%        | 48.9% / 66.1%        |
 | Supervised          | 31.7%             | 61.6%                | 55.2%                |
