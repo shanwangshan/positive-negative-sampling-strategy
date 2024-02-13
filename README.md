@@ -16,7 +16,7 @@ conda env create -f environment.yml
 ## Examples of running the code
 Since we have different folders for different sampling methods, here we show one example only.
 
-### Proposed easy-negative sampling technique
+### Proposed soft-positive sampling technique
 ```console
 cd soft-positive
 ```
